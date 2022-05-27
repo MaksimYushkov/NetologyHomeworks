@@ -1,12 +1,8 @@
-# import os
-# base_path = os.getcwd()
-# dir_name = 'Task3'
-# full_path = os.path.join(base_path, dir_name)
-# files = os.listdir(full_path)
-# print(full_path)
-# print(files)
-
-files = ['1.txt', '2.txt', '3.txt']
+import os
+base_path = os.getcwd()
+dir_name = 'Task3'
+full_path = os.path.join(base_path, dir_name)
+files = os.listdir(full_path)
 
 
 def sort_files(files_list):
