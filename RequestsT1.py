@@ -6,11 +6,10 @@ def main():
             self.name = name
 
         def get_int_by_name(self, name):
+            url = 'https://superheroapi.com/api/2619421814940190'
             id = requests.get(f'{url}/search/{self.name}').json()['results'][0]['id']
             int = requests.get(f'{url}/{id}').json()
             return int['powerstats']['intelligence']
-
-    url = 'https://superheroapi.com/api/2619421814940190'
 
     hulk = Character('Hulk')
     captain = Character('Captain America')
